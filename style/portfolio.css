@@ -1,0 +1,9 @@
+/* font-family: 'Athiti', sans-serif;
+font-family: 'Hepta Slab', serif;
+font-family: 'Spectral SC', serif; */
+
+h1 {
+  background: lightcoral;
+  color: rgb(239, 223, 223);
+  font-family: "Hepta Slab", serif;
+}
