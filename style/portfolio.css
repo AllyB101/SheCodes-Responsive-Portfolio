@@ -1,9 +1,11 @@
 :root {
-  --primary-color: aquamarine;
-  --secondary-color: ;
-  --heading-font-family: "Cormorant Garamond", serif;
-  --default-font-family: "Cormorant Garamond", serif;
+  --primary-color: #7fffd4;
+  --heading-font-family:  'Barlow', sans-serif;
+  --default-font-family: 'Barlow', sans-serif;
+
 }
+/*font-family: 'Nunito', sans-serif;
+font-family: 'Nunito Sans', sans-serif;*/
 
 body {
   margin: 100px;
@@ -24,6 +26,8 @@ h6 {
 
 h1 {
   font-size: 75px;
+  font-style: italic;
+  
 }
 
 h2 {
@@ -32,13 +36,14 @@ h2 {
 }
 
 .hero-container {
-    background-color: var(--primary-color);
-  padding: 40px 50px;
-  border-radius: 15px;
+ background: rgb(127, 255, 212, 0.3);
+ padding: 20px 50px;
+ border-radius: 15px;
 }
 
 .hero-container p {
-  margin: 0%;
-  font-family: var(--default-font-family);
+  
+  margin: 0;
+  font-family:var(--default-font-family);
   font-size: 25px;
-}
+ 
