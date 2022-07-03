@@ -8,9 +8,9 @@
 font-family: 'Nunito Sans', sans-serif;*/
 
 body {
-  margin: 100px;
+  margin: 100px auto;
   background-image: url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/039/291/original/backgroundimage.png.jpg?1656825017");
-  background-size: 1500px;
+  background-size: 1600px;
  
 
 }
@@ -22,6 +22,7 @@ h4,
 h5,
 h6 {
   font-family: var(--heading-font-family);
+  text-align: center;
 }
 
 h1 {
@@ -36,9 +37,10 @@ h2 {
 }
 
 .hero-container {
+ text-align: center;
  background: rgb(127, 255, 212, 0.3);
- padding: 20px 50px;
- border-radius: 15px;
+ padding: 30px 40px;
+ border-radius: 25px;
 }
 
 .hero-container p {
@@ -46,4 +48,51 @@ h2 {
   margin: 0;
   font-family:var(--default-font-family);
   font-size: 25px;
+}
+
+.navigation-links {
  
+  display: flex;
+  margin-top: 40px;
+  justify-content: center;
+}
+
+.navigation-links a {
+  color:black;
+  background: var(--primary-color);
+  margin: 20px;
+  border-radius: 4px;
+  padding: 15px 15px;
+  text-decoration: none;
+  text-transform: capitalize;
+  
+}
+
+.navigation-links :hover {
+ background: linear-gradient(-225deg, #D4FFEC 0%, #57F2CC 48%, #4596FB 100%);
+
+
+
+
+@media (max-width:576px) {
+    .hero-container {
+    text-align: center;
+    display: block;
+    margin: 0 15px;
+  }
+
+   img {
+    display: none;
+  }
+   
+  h1,
+  h2 {
+    text-align: center;
+    font-size: 25px;
+  }
+
+  p {
+    text-align: center;
+  }
+    
+}
