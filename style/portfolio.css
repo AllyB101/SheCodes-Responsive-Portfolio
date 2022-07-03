@@ -1,13 +1,16 @@
 :root {
-  --primary-color: #c4ffe0;
-  --secondary-color: white;
+  --primary-color: aquamarine;
+  --secondary-color: ;
   --heading-font-family: "Cormorant Garamond", serif;
   --default-font-family: "Cormorant Garamond", serif;
 }
 
 body {
   margin: 100px;
-  background: var(--primary-color);
+  background-image: url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/039/291/original/backgroundimage.png.jpg?1656825017");
+  background-size: 1500px;
+ 
+
 }
 
 h1,
@@ -29,8 +32,9 @@ h2 {
 }
 
 .hero-container {
-  padding: 30px 20px;
-  background-color: var(--secondary-color);
+    background-color: var(--primary-color);
+  padding: 40px 50px;
+  border-radius: 15px;
 }
 
 .hero-container p {
