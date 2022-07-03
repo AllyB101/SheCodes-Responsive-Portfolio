@@ -1,9 +1,8 @@
 :root {
   --primary-color: #7fffd4;
-  --heading-font-family:  'Barlow', sans-serif;
-  --default-font-family: 'Barlow', sans-serif;
-   --box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
-
+  --heading-font-family: "Barlow", sans-serif;
+  --default-font-family: "Barlow", sans-serif;
+  --box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
 }
 /*font-family: 'Nunito', sans-serif;
 font-family: 'Nunito Sans', sans-serif;*/
@@ -12,8 +11,6 @@ body {
   margin: 100px auto;
   background-image: url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/039/291/original/backgroundimage.png.jpg?1656825017");
   background-size: 1600px;
- 
-
 }
 
 h1,
@@ -29,7 +26,6 @@ h6 {
 h1 {
   font-size: 75px;
   font-style: italic;
-  
 }
 
 h2 {
@@ -38,29 +34,27 @@ h2 {
 }
 
 .hero-container {
- text-align: center;
- background: rgb(127, 255, 212, 0.4);
- padding: 30px 40px;
- border-radius: 25px;
+  text-align: center;
+  background: rgb(127, 255, 212, 0.4);
+  padding: 30px 40px;
+  border-radius: 25px;
 }
 
 .hero-container p {
-  
   margin: 0;
-  font-family:var(--default-font-family);
+  font-family: var(--default-font-family);
   font-size: 25px;
 }
 
 .navigation-links {
- 
   display: flex;
   margin-top: 40px;
   justify-content: center;
 }
 
 .navigation-links a {
-    font-family: var(--default-font-family);
-  color:rgb(26, 44, 28);
+  font-family: var(--default-font-family);
+  color: rgb(26, 44, 28);
   background: var(--primary-color);
   margin: 20px;
   border-radius: 4px;
@@ -68,33 +62,27 @@ h2 {
   text-decoration: none;
   text-transform: capitalize;
   box-shadow: var(--box-shadow);
-  
 }
 
 .navigation-links :hover {
- background: linear-gradient(-225deg, #D4FFEC 0%, #57F2CC 48%, #4596FB 100%);
+  background: linear-gradient(-225deg, #d4ffec 0%, #57f2cc 48%, #4596fb 100%);
 }
 
 .nav-item {
-    font-family: var(--default-font-family);
-    
+  font-family: var(--default-font-family);
 }
 
-
-
-
-@media (max-width:576px) {
-   
-    .hero-container {
+@media (max-width: 576px) {
+  .hero-container {
     text-align: center;
     display: block;
     margin: 0 15px;
   }
 
-   img {
+  img {
     display: none;
   }
-   
+
   h1,
   h2 {
     text-align: center;
@@ -104,5 +92,4 @@ h2 {
   p {
     text-align: center;
   }
-    
 }
