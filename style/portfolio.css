@@ -154,6 +154,9 @@ p {
   background: linear-gradient(-225deg, #d4ffec 0%, #57f2cc 48%, #4596fb 100%);
 }
 
+.email-icon {
+    max-width: 120px;
+}
 
 .navigation-links {
   display: flex;
@@ -197,6 +200,7 @@ nav {
 nav a {
     text-decoration: none;
     color: black;
+    font-size: 14px;
 
 }
 
