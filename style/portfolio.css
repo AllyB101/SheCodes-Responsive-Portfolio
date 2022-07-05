@@ -8,7 +8,7 @@
 font-family: 'Merriweather', serif;*/
 
 body {
-  margin: 100px auto;
+  font-family: var(--heading-font-family);
   background-image: url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/039/291/original/backgroundimage.png.jpg?1656825017");
   background-size: 1600px;
 }
@@ -18,15 +18,16 @@ h2,
 h3,
 h4 {
   font-family: var(--heading-font-family);
-  text-align: center;
+  font-weight: bold;
 }
 
 h1 {
+    font-size: 50px;
   line-height: 1.5;
 }
 
 h2 {
-  font-weight: 300;
+  
   font-size: 25px;
 }
 
@@ -41,11 +42,46 @@ p {
   font-family: var(--default-font-family);
 }
 
+
 .hero-container-home {
   text-align: center;
   background: rgb(127, 255, 212, 0.4);
   padding: 30px 40px;
   border-radius: 25px;
+}
+
+.hero-container-home p {
+  margin: 0;
+  font-size: 25px;
+}
+
+.homepage-h1 {
+    font-family: Homemade Apple, cursive;
+}
+
+.contact-link {
+  font-family: "Merriweather", serif;
+  color: rgb(26, 44, 28);
+  background: var(--primary-color);
+  margin: 10px;
+  border-radius: 5px;
+  padding: 20px 25px;
+  text-decoration: none;
+  text-transform: capitalize;
+  box-shadow: var(--box-shadow);
+  
+}
+
+.content-subtitle {
+    text-align: center;
+}
+
+
+
+
+.logo {
+    max-width: 95px;
+    text-align: left;
 }
 
 .portfolio-container {
@@ -64,12 +100,9 @@ p {
   justify-content: center;
  
 }
-
-.homepage-h1 {
-    font-family: Homemade Apple, cursive;
-}
-
 .portfolio-h1 {
+    display: flex;
+    justify-content: center;
     font-weight: 100;
     
 }
@@ -80,20 +113,6 @@ p {
     
 }
 
-.contact-link {
-  font-family: "Merriweather", serif;
-  color: rgb(26, 44, 28);
-  background: var(--primary-color);
-  margin: 10px;
-  border-radius: 5px;
-  padding: 20px 25px;
-  text-decoration: none;
-  text-transform: capitalize;
-  box-shadow: var(--box-shadow);
-  
-}
-
-
 .about-container {
   margin: 0 auto;
   background: rgb(127, 255, 212, 0.6);
@@ -103,10 +122,6 @@ p {
   border-radius: 2rem;
 }
 
-.hero-container-home p {
-  margin: 0;
-  font-size: 25px;
-}
 
 .email-container {
   margin: 0 auto;
@@ -115,14 +130,24 @@ p {
 
 .email-container a {
   display: flex;
-  justify-content: center;
+  justify-content:center;
 }
 
 .email-img {
   display: flex;
   padding-top: 40px;
-  max-width: 300px;
+  max-width: 150px;
   max-height: 200px;
+  outline: 8px ridge rgb(127, 255, 212, 0.4);
+}
+
+.github-img {
+  display: flex;
+  padding-top:50px;
+  max-width: 150px;
+  max-height: 200px;
+  outline: 8px ridge rgb(127, 255, 212, 0.4);
+
 }
 
 .email-link :hover {
@@ -154,6 +179,36 @@ p {
 
 .nav-item {
   font-family: var(--default-font-family);
+}
+
+nav li {
+    display: inline;
+    list-style: none;
+    line-height: 42px;
+    margin-left: 10px;
+}
+
+
+nav {
+    padding: 20px 0;
+
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+
+}
+
+nav a:hover,
+nav li.active a {
+    color: var(--primary-color);
+    transition: all 100ms ease-in-out;
+}
+
+nav ul {
+    padding: 0;
+    margin: 0;
 }
 
 @media (max-width: 576px) {
