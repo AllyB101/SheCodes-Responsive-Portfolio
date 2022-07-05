@@ -1,11 +1,11 @@
 :root {
   --primary-color: #7fffd4;
-  --heading-font-family: "Barlow", sans-serif;
-  --default-font-family: "Barlow", sans-serif;
+  --heading-font-family: "Merriweather", serif;
+  --default-font-family: "Merriweather", serif;
   --box-shadow: 5px 10px 15px rgba(0, 0, 0, 0.3);
 }
-/*font-family: 'Nunito', sans-serif;
-font-family: 'Nunito Sans', sans-serif;*/
+/*font-family: 'Homemade Apple', cursive;
+font-family: 'Merriweather', serif;*/
 
 body {
   margin: 100px auto;
@@ -22,7 +22,6 @@ h4 {
 }
 
 h1 {
-  font-style: italic;
   line-height: 1.5;
 }
 
@@ -50,11 +49,9 @@ p {
 }
 
 .portfolio-container {
-  text-align: center;
-  background: rgb(255, 255, 255, 0.6);
+  background: rgb(255, 255, 255, 0.1);
   padding: 20px 25px;
-
-  border-radius: 25px;
+  border-radius: 20px;
 }
 
 .portfolio-paragraph {
@@ -65,18 +62,37 @@ p {
   display: flex;
   margin-top: 20px;
   justify-content: center;
+ 
+}
+
+.homepage-h1 {
+    font-family: Homemade Apple, cursive;
+}
+
+.portfolio-h1 {
+    font-weight: 100;
+    
+}
+
+.portfolio-contact-button :hover {
+    background: linear-gradient(-225deg, #d4ffec 0%, #57f2cc 48%, #4596fb 100%);
+    color:#4596fb;
+    
 }
 
 .contact-link {
+  font-family: "Merriweather", serif;
   color: rgb(26, 44, 28);
   background: var(--primary-color);
-  margin: 20px;
-  border-radius: 4px;
-  padding: 20px 15px;
+  margin: 10px;
+  border-radius: 5px;
+  padding: 20px 25px;
   text-decoration: none;
   text-transform: capitalize;
   box-shadow: var(--box-shadow);
+  
 }
+
 
 .about-container {
   margin: 0 auto;
@@ -112,6 +128,7 @@ p {
 .email-link :hover {
   background: linear-gradient(-225deg, #d4ffec 0%, #57f2cc 48%, #4596fb 100%);
 }
+
 
 .navigation-links {
   display: flex;
