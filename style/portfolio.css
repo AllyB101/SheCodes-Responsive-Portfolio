@@ -2,7 +2,7 @@
   --primary-color: #7fffd4;
   --heading-font-family: "Barlow", sans-serif;
   --default-font-family: "Barlow", sans-serif;
-  --box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+  --box-shadow: 5px 10px 15px rgba(0, 0, 0, 0.3);
 }
 /*font-family: 'Nunito', sans-serif;
 font-family: 'Nunito Sans', sans-serif;*/
@@ -22,8 +22,8 @@ h4 {
 }
 
 h1 {
-  font-size: 75px;
   font-style: italic;
+  line-height: 1.5;
 }
 
 h2 {
@@ -38,7 +38,7 @@ h3 {
   font-weight: 500;
 }
 
-.portfolio-paragraph {
+p {
   font-family: var(--default-font-family);
 }
 
@@ -53,20 +53,29 @@ h3 {
   text-align: center;
   background: rgb(255, 255, 255, 0.6);
   padding: 20px 25px;
+
   border-radius: 25px;
 }
 
-footer {
-  margin: 60px 0;
+.portfolio-paragraph {
+  background-color: white;
 }
 
-footer .contact-box {
-  padding: 30px 120px;
-  border-radius: 10px;
+.portfolio-contact-button {
+  display: flex;
+  margin-top: 20px;
+  justify-content: center;
 }
 
-footer .contact-box p {
-  margin: 0;
+.contact-link {
+  color: rgb(26, 44, 28);
+  background: var(--primary-color);
+  margin: 20px;
+  border-radius: 4px;
+  padding: 20px 15px;
+  text-decoration: none;
+  text-transform: capitalize;
+  box-shadow: var(--box-shadow);
 }
 
 .about-container {
@@ -80,27 +89,24 @@ footer .contact-box p {
 
 .hero-container-home p {
   margin: 0;
-  font-family: var(--default-font-family);
   font-size: 25px;
 }
 
-.email-link {
-  display: flex;
+.email-container {
   margin: 0 auto;
+  text-align: center;
+}
+
+.email-container a {
+  display: flex;
   justify-content: center;
 }
 
-.email-link a {
-  display: block;
-  font-family: var(--default-font-family);
-  color: rgb(26, 44, 28);
-  background: var(--primary-color);
-  margin: 0 auto;
-  border-radius: 4px;
-  padding: 30px 70px 20px;
-  text-decoration: none;
-  text-transform: capitalize;
-  box-shadow: var(--box-shadow);
+.email-img {
+  display: flex;
+  padding-top: 40px;
+  max-width: 300px;
+  max-height: 200px;
 }
 
 .email-link :hover {
@@ -156,10 +162,6 @@ footer .contact-box p {
   }
 
   p {
-    text-align: center;
-  }
-
-  footer {
     text-align: center;
   }
 }
